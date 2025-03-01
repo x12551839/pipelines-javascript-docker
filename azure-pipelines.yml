@@ -17,7 +17,9 @@ variables:
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'mycontainerregistrylual12313672671-auth'
-
+  
+pool:
+  name: Default  # Nombre del pool donde agregaste tu agente self-hosted
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
